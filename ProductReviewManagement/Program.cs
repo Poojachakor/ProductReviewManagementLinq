@@ -1,4 +1,6 @@
-﻿namespace ProductReviewManagement
+﻿using System.Data;
+
+namespace ProductReviewManagement
 {
     internal class Program
     {
@@ -19,7 +21,7 @@
                 new ProductReview(){ProductID=11,UserID=1,Rating=3,Review="nice",isLike=true}
             };
             Management management = new Management();
-            management.RetrieveCountOfRecords(productReviewList);
+            management.RetrieveProductIDAndReviews(productReviewList);
         }
     }
 }
